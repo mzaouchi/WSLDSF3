@@ -1,0 +1,18 @@
+ALGORITHM Test
+VAR
+    C : HASH_TABLE<INTEGER,INTEGER>
+BEGIN
+    C.insert(1,4);
+    C.insert(1000,6);
+    C.insert(1,9)
+
+
+    C.lookup(1) // TRUE
+    C.lookup(22) //FALSE
+
+    C.get(1) //9
+    C.lookup(1000) //TRUE
+    C.get(1000) //6
+
+    
+END
